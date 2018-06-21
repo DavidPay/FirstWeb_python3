@@ -11,8 +11,8 @@ loop = asyncio.get_event_loop()
 async def go():
     async with create_pool(host="localhost",
     port=3306,
-    user='david',
-    password='pc56213626',
+    user='localuser',
+    password='local',
     db='awesome',
     loop=loop) as pool:
 

@@ -54,7 +54,7 @@ if __name__ == "__main__":
 
     
     def test(loop):
-        yield from orm.create_pool(loop=loop, user='david', password='pc56213626', db='awesome')
+        yield from orm.create_pool(loop=loop, user='localuser', password='local', db='awesome')
         u = User(name='Test',email='test@example.com', passwd='w123', image='about:blank')
         yield from u.save()
 
